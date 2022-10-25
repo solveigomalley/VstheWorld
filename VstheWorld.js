@@ -62,7 +62,6 @@ async function run(browser, sessionId) {
     //await page.waitForSelector(".audience", { timeout: timeoutMilliseconds });
     await page.waitForSelector("#button-join", { timeout: timeoutMilliseconds });
     await page.click("#button-join");
-    console.log('joined audience');
     console.log('joined audience with user' + sessionId);
 
     // When game ends, browser displays "DISCONNECTED", so we are done
